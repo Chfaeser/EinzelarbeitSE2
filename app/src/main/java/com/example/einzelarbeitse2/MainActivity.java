@@ -61,10 +61,8 @@ public class MainActivity extends AppCompatActivity {
         TextView ausgabe = findViewById(R.id.textViewResponse);
         ausgabe.setText(sortiert);
 
-
-
     }
-    //Methode für 2.1
+    //Methode für Aufgabe 2.1
 
     public void verbinden(View view){
 
