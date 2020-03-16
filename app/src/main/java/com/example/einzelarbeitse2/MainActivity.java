@@ -64,4 +64,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //Methode für 2.1
+
+    public void verbinden(View view){
+
+        EditText number = findViewById(R.id.editNumber);
+
+        String answer ="";
+        try{
+            Verbindung v = new Verbindung();
+            answer = v.execute(number.getText().toString()).get();
+            TextView ausgabe = findViewById(R.id.textViewResponse);
+            ausgabe.setText(answer);
+        }catch (Exception e){
+            answer = "Error in verbinden";
+        }
+
+    }
 }
