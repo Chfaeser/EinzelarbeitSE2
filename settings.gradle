@@ -1,0 +1,2 @@
+rootProject.name='EinzelarbeitSE2'
+include ':app'
